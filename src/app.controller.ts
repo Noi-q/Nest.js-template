@@ -10,9 +10,7 @@ export class AppController {
   ) {}
 
   @Get()
-  getHello(): string {
-    console.log(this.config.get('location').host)
-    console.log(this.config.get('location'))
-    return this.appService.getHello();
+  getHello() {
+    return this.appService.getHello(this.config.get('location'));
   }
 }

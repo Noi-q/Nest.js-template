@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="https://github.com/Noi-q/Nest.js-template/blob/main/README_zh.md">中文文档</a>
+</p>
+
+<p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 

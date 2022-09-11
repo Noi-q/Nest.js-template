@@ -8,23 +8,24 @@
 - src 代码运行目录
 - prisma 数据库配置目录
 - dist 打包文件
+- 注:每个src下的目录文件都有README文档说明
 
 
 ## 下载
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## 运行
 
 ```bash
 # development
-$ npm run start
+$ yarn run start
 
 # watch mode
-$ npm run start:dev
+$ yarn run start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn run start:prod
 ```

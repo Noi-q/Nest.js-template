@@ -1,4 +1,4 @@
-<p align="center">
+<p align="">
   <a href="https://github.com/Noi-q/Nest.js-template/blob/main/README_zh.md">中文文档</a>
 </p>
 

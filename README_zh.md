@@ -24,6 +24,7 @@
 
 ## 项目目录结构
 
+```
 Nest.js-template
 ├── LICENSE
 ├── nest-cli.json
@@ -94,7 +95,7 @@ Nest.js-template
 ├── tsconfig.build.json
 ├── tsconfig.json
 └── yarn.lock
-
+```
 - 注:每个src下的目录文件都有README文档说明
 
 

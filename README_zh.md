@@ -20,39 +20,104 @@
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
 
-- .prettierrs 文件为代码格式化规范文件
-- tsconfig.build.json 文件为ts打包配置文件
-- tsconfig.json 文件为ts运行规范配置文件
-- .env 数据库配置文件，也可以配置其他内容
-- .eslintrc.js 文件为es代码检查规范配置文件
-- .gitignore 文件为拒绝上传的git仓库的配置文件
-- test 测试目录
-- src 代码运行目录
-- prisma 数据库配置目录
-- dist 打包文件
+
+
+## 项目目录结构
+
+Nest.js-template
+├── LICENSE
+├── nest-cli.json
+├── package.json
+├── package-lock.json
+├── prisma
+│   ├── migrations
+│   │   ├── 20220911153504_user
+│   │   │   └── migration.sql
+│   │   └── migration_lock.toml
+│   ├── README.md
+│   ├── schema.prisma
+│   └── seed.ts
+├── README.md
+├── README_zh.md
+├── src
+│   ├── app.controller.ts
+│   ├── app.module.ts
+│   ├── app.service.ts
+│   ├── config
+│   │   ├── index.ts
+│   │   ├── modules
+│   │   │   └── location.ts
+│   │   └── README.md
+│   ├── Dto
+│   │   ├── index.ts
+│   │   ├── modules
+│   │   │   └── user
+│   │   │       ├── info.dto.ts
+│   │   │       ├── login.dto.ts
+│   │   │       └── register.dto.ts
+│   │   └── README.md
+│   ├── filters
+│   │   ├── README.md
+│   │   └── validate.filter.ts
+│   ├── GlobalModules
+│   │   ├── prisma
+│   │   │   ├── prisma.module.ts
+│   │   │   ├── prisma.service.ts
+│   │   │   └── README.md
+│   │   └── README.md
+│   ├── main.ts
+│   ├── modules
+│   │   ├── modules.module.ts
+│   │   ├── README.md
+│   │   └── user
+│   │       ├── user.controller.ts
+│   │       ├── user.module.ts
+│   │       └── user.service.ts
+│   ├── Pipe
+│   │   ├── README.md
+│   │   └── validate.ts
+│   ├── README.md
+│   ├── Rules
+│   │   ├── index.ts
+│   │   ├── modules
+│   │   │   └── user
+│   │   │       └── IsNotExists.Rule.ts
+│   │   └── README.md
+│   └── types
+│       ├── index.ts
+│       ├── modules
+│       │   └── config.ts
+│       └── README.md
+├── test
+│   ├── app.e2e-spec.ts
+│   └── jest-e2e.json
+├── tsconfig.build.json
+├── tsconfig.json
+└── yarn.lock
+
 - 注:每个src下的目录文件都有README文档说明
 
 
 ## 下载
 
 ```bash
-$ yarn install
+yarn install
 ```
 
 ## 运行
 
 ```bash
 # development
-$ yarn run start
+yarn run start
 
 # watch mode
-$ yarn run start:dev
+yarn run start:dev
 
 # production mode
-$ yarn run start:prod
+yarn run start:prod
 ```
 
 
-### .env-template
+## .env-template
 
 - 连接数据库请在 .env-template 文件里修改,修改之前，请把文件名重命名为 .env

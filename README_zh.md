@@ -31,13 +31,6 @@ Nest.js-template
 ├── package.json
 ├── package-lock.json
 ├── prisma
-│   ├── migrations
-│   │   ├── 20220911153504_user
-│   │   │   └── migration.sql
-│   │   └── migration_lock.toml
-│   ├── README.md
-│   ├── schema.prisma
-│   └── seed.ts
 ├── README.md
 ├── README_zh.md
 ├── src
@@ -45,55 +38,21 @@ Nest.js-template
 │   ├── app.module.ts
 │   ├── app.service.ts
 │   ├── config
-│   │   ├── index.ts
-│   │   ├── modules
-│   │   │   └── location.ts
-│   │   └── README.md
 │   ├── Dto
-│   │   ├── index.ts
-│   │   ├── modules
-│   │   │   └── user
-│   │   │       ├── info.dto.ts
-│   │   │       ├── login.dto.ts
-│   │   │       └── register.dto.ts
-│   │   └── README.md
 │   ├── filters
-│   │   ├── README.md
-│   │   └── validate.filter.ts
 │   ├── GlobalModules
-│   │   ├── prisma
-│   │   │   ├── prisma.module.ts
-│   │   │   ├── prisma.service.ts
-│   │   │   └── README.md
-│   │   └── README.md
 │   ├── main.ts
 │   ├── modules
-│   │   ├── modules.module.ts
-│   │   ├── README.md
-│   │   └── user
-│   │       ├── user.controller.ts
-│   │       ├── user.module.ts
-│   │       └── user.service.ts
 │   ├── Pipe
-│   │   ├── README.md
-│   │   └── validate.ts
 │   ├── README.md
 │   ├── Rules
-│   │   ├── index.ts
-│   │   ├── modules
-│   │   │   └── user
-│   │   │       └── IsNotExists.Rule.ts
-│   │   └── README.md
 │   └── types
-│       ├── index.ts
-│       ├── modules
-│       │   └── config.ts
-│       └── README.md
 ├── test
-│   ├── app.e2e-spec.ts
-│   └── jest-e2e.json
 ├── tsconfig.build.json
 ├── tsconfig.json
+├── .eslintrc.js
+├── .env-template
+├── .gitignore
 └── yarn.lock
 ```
 - 注:每个src下的目录文件都有README文档说明

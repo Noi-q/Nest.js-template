@@ -61,3 +61,5 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
+
+- 本项目采用<a href="https://github.com/Noi-q/Nest.js-template/blob/main/LICENSE">MIT</a>协议

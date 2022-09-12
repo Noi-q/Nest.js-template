@@ -55,7 +55,7 @@ Nest.js-template
 ├── .gitignore
 └── yarn.lock
 ```
-- 注:每个src下的目录文件都有README文档说明
+- 注:每个src下的目录文件都有相关目录的README文档说明
 
 
 ## 下载

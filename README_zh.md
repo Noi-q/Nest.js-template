@@ -55,4 +55,4 @@ $ yarn run start:prod
 
 ### .env-template
 
-- 连接数据库请在.env-template文件里修改,修改之前，请把文件名重命名为.env
+- 连接数据库请在 .env-template 文件里修改,修改之前，请把文件名重命名为 .env

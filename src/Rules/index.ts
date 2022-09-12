@@ -1,4 +1,6 @@
-import { IsNotExistsRule } from './modules/user/IsNotExists.Rule'
+import { IsNotExistsRule,IsNotUserRule,IsNotIdRule } from './modules/user/IsNotExists.Rule'
 export {
-  IsNotExistsRule
+  IsNotExistsRule,
+  IsNotUserRule,
+  IsNotIdRule
 }

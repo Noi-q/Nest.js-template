@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post, UsePipes } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
-import { RegisterDto,LoginDto } from 'src/Dto';
+import { RegisterDto,LoginDto, InfoDto } from 'src/Dto';
 import { Validate } from 'src/Pipe/validate';
 import { UserService } from './user.service';
 
@@ -26,13 +26,7 @@ export class UserController {
   @Post('register')
   @UsePipes(Validate)
   Register(@Body() body:RegisterDto){
-    return this.prisma.user.create({
-      data:{
-        name:body.name,
-        account:body.account,
-        password:body.password
-      }
-    })
+    return this.userService.register(body)
   }
 
   /**
@@ -41,17 +35,15 @@ export class UserController {
   @Post('login')
   @UsePipes(Validate)
   Login(@Body() body:LoginDto){
-    // 查询数据库
-    return this.prisma.user.findFirst({
-      where:{
-        account:body.account,
-        password:body.password
-      }
-    }).then(
-      res =>{
-        // 返回服务
-        return this.userService.Login(res)
-      }
-    )
+    return this.userService.Login(body)
+  }
+
+  /**
+   * 用户信息
+   */
+  @Post('info')
+  @UsePipes(Validate)
+  Info(@Body() body:InfoDto){
+    return this.userService.Info(body)
   }
 }

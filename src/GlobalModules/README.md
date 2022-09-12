@@ -1,0 +1,1 @@
+- ~/src/GlobalModules 全局模块目录

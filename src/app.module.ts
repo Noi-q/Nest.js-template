@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import config from './config/index'
 import { Modules } from './modules/modules.module';
+import { PrismaModule } from './GlobalModules/prisma/prisma.module';
 
 @Module({
   imports: [
@@ -12,8 +13,10 @@ import { Modules } from './modules/modules.module';
       isGlobal:true,
       load:[...config]
     }),
-    // Modules全局模块
-    Modules
+    // Modules全局路由控制器服务模块
+    Modules,
+    // Prisma Module
+    PrismaModule
   ],
   controllers: [AppController],
   providers: [AppService],

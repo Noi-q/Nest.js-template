@@ -1,0 +1,1 @@
+- 继承PrismaClient引用到全局

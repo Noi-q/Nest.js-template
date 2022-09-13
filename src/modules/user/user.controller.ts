@@ -41,7 +41,7 @@ export class UserController {
 
   /**
    * 用户信息
-   * @Auth 自定义JWT验证
+   * @Auth 自定义JWT装饰器验证
    */
   @Post('info')
   @Auth()

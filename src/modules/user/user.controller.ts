@@ -2,6 +2,7 @@ import { Body, Controller, Get, Post, UsePipes } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
 import { RegisterDto,LoginDto, InfoDto } from 'src/Dto';
 import { Validate } from 'src/Pipe/validate';
+import { Auth } from './decorator/authJwt.decorator';
 import { UserService } from './user.service';
 
 @Controller('user')
@@ -40,8 +41,10 @@ export class UserController {
 
   /**
    * 用户信息
+   * @Auth 自定义JWT验证
    */
   @Post('info')
+  @Auth()
   @UsePipes(Validate)
   Info(@Body() body:InfoDto){
     return this.userService.Info(body)

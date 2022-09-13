@@ -1,7 +1,7 @@
 import { Body, Controller, Get, Post, UsePipes } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
 import { RegisterDto,LoginDto, InfoDto } from 'src/Dto';
-import { Validate } from 'src/Pipe/validate';
+import { Validate } from 'src/pipe/validate';
 import { Auth } from './decorator/authJwt.decorator';
 import { UserService } from './user.service';
 

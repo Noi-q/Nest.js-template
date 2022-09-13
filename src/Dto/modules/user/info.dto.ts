@@ -1,5 +1,5 @@
 import {IsNotEmpty, isNumberString} from 'class-validator'
-import { IsNotIdRule } from 'src/Rules'
+import { IsNotIdRule } from 'src/rules'
 export default class InfoDto {
   @IsNotEmpty({
     message:"id不能为空!"

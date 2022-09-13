@@ -1,5 +1,5 @@
 import {IsNotEmpty} from 'class-validator'
-import { IsNotExistsRule, IsNotUserRule } from 'src/Rules'
+import { IsNotExistsRule, IsNotUserRule } from 'src/rules'
 export default class LoginDto {
   @IsNotEmpty({
     message:"帐号不能为空!"

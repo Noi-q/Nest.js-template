@@ -1,5 +1,5 @@
 import {IsNotEmpty} from 'class-validator'
-import { IsNotExistsRule } from 'src/Rules'
+import { IsNotExistsRule } from 'src/rules'
 export default class RegisterDto {
   @IsNotEmpty({
     message:"用户名不能为空!"

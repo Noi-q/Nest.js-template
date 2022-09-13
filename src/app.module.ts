@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import config from './config/index'
 import { Modules } from './modules/modules.module';
-import { PrismaModule } from './GlobalModules/prisma/prisma.module';
+import { PrismaModule } from './globalModules/prisma/prisma.module';
 
 @Module({
   imports: [

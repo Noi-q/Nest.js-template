@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
-import { JwtStrategy } from 'src/JWT/jwt.strategy';
+import { JwtStrategy } from 'src/jwt/jwt.strategy';
 import { UserController } from './user.controller';
 import { UserService } from './user.service';
 

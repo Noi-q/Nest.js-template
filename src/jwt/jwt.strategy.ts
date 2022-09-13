@@ -3,7 +3,7 @@ import { ConfigService } from "@nestjs/config";
 import { PassportStrategy } from "@nestjs/passport";
 import { validate } from "class-validator";
 import { ExtractJwt, Strategy } from "passport-jwt";
-import { PrismaService } from "src/GlobalModules/prisma/prisma.service";
+import { PrismaService } from "src/globalModules/prisma/prisma.service";
 
 @Injectable()
 

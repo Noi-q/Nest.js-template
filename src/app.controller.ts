@@ -11,6 +11,7 @@ export class AppController {
 
   @Get()
   getHello() {
+    console.log(process)
     return this.appService.getHello(this.config.get('location'));
   }
 }

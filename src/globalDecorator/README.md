@@ -1,0 +1,1 @@
+- ~/src/globalDecorator 全局自定义装饰器目录
